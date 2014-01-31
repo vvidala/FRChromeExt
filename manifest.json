@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "ForRent Quick Search",
+  "description": "Find an apartment for rent that fits your needs from our expansive selection of rental and property types, to various bedroom and floorplan options.",
+  "version": "0.0.1",
+  "omnibox": {"keyword": "forrent.com"},
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "permissions": [
+    "*://*.forrent.com/"
+  ],
+  "icons": {
+  	"16": "img/favicon2.png",
+    "48": "img/appicon-48.png",
+    "128": "img/appicon-128.png"
+  },
+  "browser_action": {
+  	"default_icon": "img/favicon2.png",
+  	"default_popup": "popup.html"
+  }
+}

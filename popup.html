@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="/js/jquery-1.9.1.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+
+    <script src="/js/popup.js"></script>
+  </head>
+  <body>
+  	<img src="img/background.png" />
+  	<img src="img/pinicon.png" class="logo"/>
+  	<section class="homeSearchBg balance abs">
+	<div class="rndBox10 transBlkBg transBlkBgHome abs">
+		<div class="mb20 rel homeSearch balance">
+			<h1 class="txtWht txtC noShadow mt0 mb10">Find an Apartment</h1>
+			<form id="headerSearch" name="headerSearch" class="line">
+				<input type="hidden" name="search_type" value="">
+				<input type="hidden" name="ssradius" value="">
+				<input type="hidden" name="seed" value="442319836">
+				<input type="hidden" name="page_type_id" value="">
+				<fieldset id="search" class="wFull unit mb20">
+					
+					<input id="cityState" autofocus="" name="main_field" type="text" value="" placeholder="City state, Zip or SiteId" class="jq-search-autocomplete w300 pb10 pt10 pl10 rndBox5 searchShadow bdr0 ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+					<!--<![endif]-->
+
+					<div class="unit mr10 mt10 pr20">
+						<label for="sbeds" id="sbedsl" title="Enter The Number Of Beds Searched Properties Should Have" class="txtN txtWht pb5">Beds</label>
+						<select id="sbeds" name="sbeds" title="Number of Beds" class="searchOptions w75 rndBoxSearchOptions searchShadow bdr0">
+							<option selected="selected" value="99">Any</option>
+							<option value="Studio">Studio</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5+</option>
+						</select>
+					</div>
+					<div class="unit mr20 mt10 pr20">
+						<label for="sbaths" id="sbathsl" title="Enter The Number Of Baths For Your Search" class="txtN txtWht pb5">Baths</label>
+						<select id="sbaths" name="sbaths" title="Number of Baths" class="searchOptions w75 rndBoxSearchOptions searchShadow bdr0">
+							<option selected="selected" value="99">Any</option>
+							<option value="1">1</option>
+							<option value="1.5">1.5</option>
+							<option value="2">2</option>
+							<option value="2.5">2.5</option>
+							<option value="3">3</option>
+							<option value="3.5">3.5</option>
+							<option value="4">4</option>
+						</select>
+					</div>
+					<div class="unit mr10 mt10">
+						<label for="min_price" id="priceLow" title="Enter Your Minimum Price Range Amount" class="txtN txtWht pb5">Max Price</label>
+						<input type="text" id="min_price" name="min_price" class="unit w70 fs14 rndBoxSearchOptions searchShadow bdr0" value="$0">
+					</div>
+				</fieldset>
+				<div>
+				
+					<!--[if lt IE 10]>
+					<div class="ie9ButtonFix unitRt">
+					<![endif]-->
+						<input id="btnSearch" type="button" value="Search" class="button balance orange homeSearchBtn w200 fs20 wideTxt">
+					<!--[if lt IE 10]>
+					</div>
+					<![endif]-->
+					
+				
+				</div>
+			</form>
+		</div>
+	</div>
+	</section>
+	<div class="abs txtWht copyright">© 2014 Dominion Enterprises</div>
+  </body>
+</html>
