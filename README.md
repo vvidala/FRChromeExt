@@ -4,6 +4,7 @@ FRChromeExt
 Chrome Extension for ForRent.com.
 
 Installing this extension for development.
+------
 
 1. Goto ***chrome://extensions*** in your chrome browser (or select Extensions under the Tools in menu).
 2. Check the **Developer mode** checkbox in the top right-hand corner.
